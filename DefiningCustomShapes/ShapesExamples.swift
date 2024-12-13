@@ -9,8 +9,14 @@ import SwiftUI
 
 struct ShapesExamples: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-        Triangle()
+        VStack {
+            Diamond()
+                .stroke(.red, lineWidth: 20)
+                .fill(.orange)
+                .frame(width: 150, height: 150)
+            Diamond()
+            
+        }
     }
 }
 
